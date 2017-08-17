@@ -73,7 +73,7 @@ public struct ECurve {
     // let ∞ = infinity
     
     public var description: String {
-        return "Curve over \(field) with base point (\(gX.value), \(gY.value)), a = \(a), b = \(b), order \(n) and cofactor \(h)"
+        return "Curve over \(field) with base point (\(gX.value), \(gY.value)), a = \(a), b = \(b), order \(n) and cofactor \(h ?? 0)"
     }
     
     public func point (data: NSData) -> ECPoint? {

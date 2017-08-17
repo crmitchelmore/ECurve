@@ -31,7 +31,7 @@ class ECPointTests: XCTestCase {
         let g = ECPoint(x: EllipticCurveDomain.Secp256k1.gX, y: EllipticCurveDomain.Secp256k1.gY, curve: curve)
         
         switch g.coordinate {
-        case let .Affine(x, y):
+        case let .Affine(x, _):
             XCTAssertEqual(x!.value.toHexString, EllipticCurveDomain.Secp256k1.gX.value.toHexString, "Gx hex");
             XCTAssertTrue(x! == EllipticCurveDomain.Secp256k1.gX, "Gx equality");
 
@@ -60,9 +60,7 @@ class ECPointTests: XCTestCase {
     }
     
     func testInitWithSubscript() {
-        let P = curve[5,8]
-        
-        XCTAssertTrue(true, "")
+        _ = curve[5,8]
     }
     
     func testConvertToJacobian() {

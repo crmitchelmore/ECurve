@@ -11,9 +11,9 @@ import UInt256
 
 class ECurveTests: XCTestCase {
     
-    var field: FiniteField = FiniteField.PrimeField(p: 11)
+    let field: FiniteField = FiniteField.PrimeField(p: 11)
     
-    var curve: ECurve = ECurve(field: FiniteField.PrimeField(p: 11), gX: FiniteField.PrimeField(p: 11).int(8), gY: FiniteField.PrimeField(p: 11).int(6), a: UInt256(1), b: UInt256(0), n: UInt256(12), h: nil)
+  var curve: ECurve = ECurve(field: FiniteField.PrimeField(p: 11), gX: FiniteField.PrimeField(p: 11).int(8), gY: FiniteField.PrimeField(p: 11).int(6), a: UInt256(1), b: UInt256(0), n: UInt256(12), h: nil)
     
 
     // y^2 = x^3 + x (in terms of finite field arithmatic)
@@ -64,8 +64,8 @@ class ECurveTests: XCTestCase {
         let inf = curve.infinity
         let P: ECPoint = curve[5,8]
         
-        var sum: ECPoint = inf + P
-        var sumDescription: String = sum.description
+      var sum: ECPoint = inf + P
+      var sumDescription: String = sum.description
         
         XCTAssertTrue(sum == P, sumDescription);
         
@@ -140,9 +140,9 @@ class ECurveTests: XCTestCase {
     }
     
     func testDouble() {
-        var P = curve[5,3]
+        let P = curve[5,3]
         let double = curve[5,8]
-        var result = 2 * P
+        let result = 2 * P
         XCTAssertTrue(double == result, result.description);
     }
     
@@ -184,12 +184,12 @@ class ECurveTests: XCTestCase {
     
     
     func testDoubleInJacobian() {
-        var P = curve[5,3]
+      var P = curve[5,3]
         let double = curve[5,8]
         
         P.convertToJacobian()
         
-        var result = 2 * P
+      var result = 2 * P
         
         result.convertToAffine()
         
@@ -207,8 +207,8 @@ class ECurveTests: XCTestCase {
     }
     
     func testAddInJacobian() {
-        var P = curve[5,3]
-        var Q = curve[9,10]
+      var P = curve[5,3]
+      var Q = curve[9,10]
         
         P.convertToJacobian()
         Q.convertToJacobian() // The right hand side of addition must have Z=1 so it needs to be "freshly" converted to Jacobian.
@@ -249,7 +249,7 @@ class ECurveTests: XCTestCase {
     func testMultiply() {
         let P = curve[9,10]
         
-        var result = 3 * P
+        let result = 3 * P
         XCTAssertTrue(result == curve[0,0], result.description);
     }
     
@@ -321,7 +321,7 @@ class ECurveTests: XCTestCase {
         var result = 2 * curve.G
         XCTAssertTrue(result == double, result.description);
         
-        var a = curve[978329252, 1]
+        let a = curve[978329252, 1]
         double = curve[2015765350, 2147483445]
         result = 2 * a
         XCTAssertTrue(result == double, result.description);
@@ -333,8 +333,8 @@ class ECurveTests: XCTestCase {
         
         curve = ECurve(field: FiniteField.PrimeField(p: p), gX: FiniteField.PrimeField(p: p).int(1244414049), gY: FiniteField.PrimeField(p: p).int(UInt256(decimalString: "2415436385")), a: 0, b: 7, n: UInt256(decimalString: "429496719"), h: nil)
         
-        var a = curve[1130481541, 1353125538]
-        var sum  = curve[UInt256(decimalString: "3531337424"), UInt256(decimalString: "137601932")]
+      var a = curve[1130481541, 1353125538]
+      var sum  = curve[UInt256(decimalString: "3531337424"), UInt256(decimalString: "137601932")]
         
         var result = curve.G + a
         
@@ -405,7 +405,7 @@ class ECurveTests: XCTestCase {
     func testImportLookupTable() {
         let basePoint = ECurve(domain: .Secp256k1).G
         
-        var lookup:[Any] = [] // ECPoint crashes compiler with -Ounchecked
+      var lookup:[Any] = [] // ECPoint crashes compiler with -Ounchecked
         
 //        self.measureBlock() { // Crashes the compiler
 //            for i in 1...10 {
@@ -413,7 +413,7 @@ class ECurveTests: XCTestCase {
 //            }
 //        }
         
-        var first: ECPoint = lookup[0] as! ECPoint
+      var first: ECPoint = lookup[0] as! ECPoint
     
         first.convertToAffine()
         
