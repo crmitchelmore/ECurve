@@ -1,0 +1,4 @@
+module CUInt256 {
+    umbrella "/Users/cm/work/ECurve/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include"
+    export *
+}

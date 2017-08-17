@@ -1,0 +1,1 @@
+{"object": {"dependencies": [{"basedOn": null, "name": "UInt256", "repositoryURL": "https://github.com/crmitchelmore/UInt256.git", "state": {"checkoutState": {"branch": null, "revision": "1c14361429470b0ab7c2595fbcdcc291d8e96573", "version": "1.0.1"}, "name": "checkout"}, "subpath": "UInt256.git--5686592992454955421"}]}, "version": 1}

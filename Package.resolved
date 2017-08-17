@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UInt256",
+        "repositoryURL": "https://github.com/crmitchelmore/UInt256.git",
+        "state": {
+          "branch": null,
+          "revision": "1c14361429470b0ab7c2595fbcdcc291d8e96573",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

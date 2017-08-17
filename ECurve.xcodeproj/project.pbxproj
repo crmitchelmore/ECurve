@@ -6,1103 +6,905 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"ECurve::ECurvePackageTests::ProductTarget" /* ECurvePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_119 /* Build configuration list for PBXAggregateTarget "ECurvePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_122 /* PBXTargetDependency */,
+			);
+			name = ECurvePackageTests;
+			productName = ECurvePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		A211A5E8198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */; };
-		A211A5E9198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */; };
-		A211A5EB198C0A5900C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */; };
-		A211A5EC198C0A5900C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */; };
-		A226907D1962E6E800291D7A /* ECurve.h in Headers */ = {isa = PBXBuildFile; fileRef = A226907C1962E6E800291D7A /* ECurve.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A22690831962E6E800291D7A /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22690771962E6E800291D7A /* ECurve.framework */; };
-		A22FAE041996539500B50398 /* ECurveFlat.h in Headers */ = {isa = PBXBuildFile; fileRef = A22FAE031996539500B50398 /* ECurveFlat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A22FAE17199653B400B50398 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */; };
-		A22FAE18199653B400B50398 /* ECDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4011962E7A600CD0B09 /* ECDomain.swift */; };
-		A22FAE19199653B400B50398 /* ECPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4021962E7A600CD0B09 /* ECPoint.swift */; };
-		A22FAE1A199653B400B50398 /* ECurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4031962E7A600CD0B09 /* ECurve.swift */; };
-		A22FAE1B199653B400B50398 /* FiniteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4041962E7A600CD0B09 /* FiniteField.swift */; };
-		A22FAE1C199653B400B50398 /* FiniteFieldInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4051962E7A600CD0B09 /* FiniteFieldInteger.swift */; };
-		A22FAE2D199653E900B50398 /* UInt256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE1E199653E900B50398 /* UInt256.swift */; };
-		A22FAE2E199653E900B50398 /* UInt256+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE1F199653E900B50398 /* UInt256+Printable.swift */; };
-		A22FAE2F199653E900B50398 /* UInt256+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE20199653E900B50398 /* UInt256+Equatable.swift */; };
-		A22FAE30199653E900B50398 /* UInt256+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE21199653E900B50398 /* UInt256+Comparable.swift */; };
-		A22FAE31199653E900B50398 /* UInt256+BitwiseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE22199653E900B50398 /* UInt256+BitwiseOperations.swift */; };
-		A22FAE32199653E900B50398 /* UInt256+IntegerArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE23199653E900B50398 /* UInt256+IntegerArithmetic.c */; };
-		A22FAE33199653E900B50398 /* UInt256+IntegerArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE24199653E900B50398 /* UInt256+IntegerArithmetic.swift */; };
-		A22FAE34199653E900B50398 /* UInt256+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE25199653E900B50398 /* UInt256+Sequence.swift */; };
-		A22FAE35199653E900B50398 /* UInt256+IntegerLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE26199653E900B50398 /* UInt256+IntegerLiteralConvertible.swift */; };
-		A22FAE36199653E900B50398 /* UInt256+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE27199653E900B50398 /* UInt256+Hashable.swift */; };
-		A22FAE37199653E900B50398 /* UInt256+RandomAccessIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE28199653E900B50398 /* UInt256+RandomAccessIndex.swift */; };
-		A22FAE38199653E900B50398 /* UInt256+ForwardIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE29199653E900B50398 /* UInt256+ForwardIndex.swift */; };
-		A22FAE39199653E900B50398 /* UInt256+ArrayBound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE2A199653E900B50398 /* UInt256+ArrayBound.swift */; };
-		A22FAE3A199653E900B50398 /* UInt32+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE2B199653E900B50398 /* UInt32+Additions.swift */; };
-		A22FAE3B199653E900B50398 /* BaseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE2C199653E900B50398 /* BaseConverter.swift */; };
-		A258B4061962E7A600CD0B09 /* ECDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4011962E7A600CD0B09 /* ECDomain.swift */; };
-		A258B4071962E7A600CD0B09 /* ECPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4021962E7A600CD0B09 /* ECPoint.swift */; };
-		A258B4081962E7A600CD0B09 /* ECurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4031962E7A600CD0B09 /* ECurve.swift */; };
-		A258B4091962E7A600CD0B09 /* FiniteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4041962E7A600CD0B09 /* FiniteField.swift */; };
-		A258B40A1962E7A600CD0B09 /* FiniteFieldInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4051962E7A600CD0B09 /* FiniteFieldInteger.swift */; };
-		A26F77E0196850EF00C75822 /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F77D5196850EF00C75822 /* ECurve.framework */; };
-		A26F77F31968513800C75822 /* ECDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4011962E7A600CD0B09 /* ECDomain.swift */; };
-		A26F77F41968513800C75822 /* ECPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4021962E7A600CD0B09 /* ECPoint.swift */; };
-		A26F77F51968513800C75822 /* ECurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4031962E7A600CD0B09 /* ECurve.swift */; };
-		A26F77F61968513800C75822 /* FiniteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4041962E7A600CD0B09 /* FiniteField.swift */; };
-		A26F77F71968513800C75822 /* FiniteFieldInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4051962E7A600CD0B09 /* FiniteFieldInteger.swift */; };
-		A2960AB2197E963A002EC55D /* ECPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FB1962E77D00CD0B09 /* ECPointTests.swift */; };
-		A2960AB3197E963A002EC55D /* ECurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FC1962E77D00CD0B09 /* ECurveTests.swift */; };
-		A2960AB4197E963A002EC55D /* FiniteFieldIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FD1962E77D00CD0B09 /* FiniteFieldIntegerTests.swift */; };
-		A2D39BA0198D7C8600E2D317 /* UInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D39B9F198D7C8600E2D317 /* UInt256.framework */; };
-		A2D39BA1198D7CCC00E2D317 /* ECPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FB1962E77D00CD0B09 /* ECPointTests.swift */; };
-		A2D39BA2198D7CCC00E2D317 /* ECurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FC1962E77D00CD0B09 /* ECurveTests.swift */; };
-		A2D39BA3198D7CCC00E2D317 /* FiniteFieldIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B3FD1962E77D00CD0B09 /* FiniteFieldIntegerTests.swift */; };
-		A2D39BA5198D7D4B00E2D317 /* UInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D39BA4198D7D4B00E2D317 /* UInt256.framework */; };
+		OBJ_100 /* UInt256+ForwardIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* UInt256+ForwardIndex.swift */; };
+		OBJ_101 /* UInt256+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* UInt256+Hashable.swift */; };
+		OBJ_102 /* UInt256+IntegerArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* UInt256+IntegerArithmetic.swift */; };
+		OBJ_103 /* UInt256+IntegerLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* UInt256+IntegerLiteralConvertible.swift */; };
+		OBJ_104 /* UInt256+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* UInt256+Printable.swift */; };
+		OBJ_105 /* UInt256+RandomAccessIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* UInt256+RandomAccessIndex.swift */; };
+		OBJ_106 /* UInt256+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* UInt256+Sequence.swift */; };
+		OBJ_107 /* UInt256.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UInt256.swift */; };
+		OBJ_108 /* UInt32+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* UInt32+Additions.swift */; };
+		OBJ_110 /* CUInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UInt256::CUInt256::Product" /* CUInt256.framework */; };
+		OBJ_116 /* UInt256+IntegerArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* UInt256+IntegerArithmetic.c */; };
+		OBJ_52 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_58 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Package.swift */; };
+		OBJ_64 /* ECPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ECPointTests.swift */; };
+		OBJ_65 /* ECurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ECurveTests.swift */; };
+		OBJ_66 /* FiniteFieldIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* FiniteFieldIntegerTests.swift */; };
+		OBJ_68 /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ECurve::ECurve::Product" /* ECurve.framework */; };
+		OBJ_69 /* UInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UInt256::UInt256::Product" /* UInt256.framework */; };
+		OBJ_70 /* CUInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UInt256::CUInt256::Product" /* CUInt256.framework */; };
+		OBJ_81 /* ECDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ECDomain.swift */; };
+		OBJ_82 /* ECPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ECPoint.swift */; };
+		OBJ_83 /* ECurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ECurve.swift */; };
+		OBJ_84 /* FiniteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FiniteField.swift */; };
+		OBJ_85 /* FiniteFieldInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FiniteFieldInteger.swift */; };
+		OBJ_86 /* Secp256k1BasePointDoublings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Secp256k1BasePointDoublings.swift */; };
+		OBJ_88 /* UInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UInt256::UInt256::Product" /* UInt256.framework */; };
+		OBJ_89 /* CUInt256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UInt256::CUInt256::Product" /* CUInt256.framework */; };
+		OBJ_96 /* BaseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* BaseConverter.swift */; };
+		OBJ_97 /* UInt256+BitwiseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* UInt256+BitwiseOperations.swift */; };
+		OBJ_98 /* UInt256+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* UInt256+Comparable.swift */; };
+		OBJ_99 /* UInt256+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UInt256+Equatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A22690841962E6E800291D7A /* PBXContainerItemProxy */ = {
+		832BE5741F45BFF6001591C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A226906E1962E6E800291D7A /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A22690761962E6E800291D7A;
+			remoteGlobalIDString = "UInt256::UInt256";
+			remoteInfo = UInt256;
+		};
+		832BE5751F45BFF6001591C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "UInt256::CUInt256";
+			remoteInfo = CUInt256;
+		};
+		832BE5761F45BFF6001591C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "UInt256::CUInt256";
+			remoteInfo = CUInt256;
+		};
+		832BE5771F45BFF6001591C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ECurve::ECurve";
 			remoteInfo = ECurve;
 		};
-		A26F77E1196850EF00C75822 /* PBXContainerItemProxy */ = {
+		832BE5781F45BFF6001591C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A226906E1962E6E800291D7A /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A26F77D4196850EF00C75822;
-			remoteInfo = ECurveMac;
+			remoteGlobalIDString = "UInt256::UInt256";
+			remoteInfo = UInt256;
+		};
+		832BE5791F45BFF6001591C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "UInt256::CUInt256";
+			remoteInfo = CUInt256;
+		};
+		832BE57A1F45BFF7001591C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ECurve::ECurveTests";
+			remoteInfo = ECurveTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secp256k1BasePointDoublings.plist; path = Resources/Secp256k1BasePointDoublings.plist; sourceTree = "<group>"; };
-		A22690771962E6E800291D7A /* ECurve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECurve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A226907B1962E6E800291D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A226907C1962E6E800291D7A /* ECurve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECurve.h; sourceTree = "<group>"; };
-		A22690821962E6E800291D7A /* ECurveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECurveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A22690881962E6E800291D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
-		A22FADFF1996539500B50398 /* ECurveFlat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECurveFlat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A22FAE021996539500B50398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A22FAE031996539500B50398 /* ECurveFlat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECurveFlat.h; sourceTree = "<group>"; };
-		A22FAE1E199653E900B50398 /* UInt256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UInt256.swift; path = ../UInt256/Classes/UInt256.swift; sourceTree = "<group>"; };
-		A22FAE1F199653E900B50398 /* UInt256+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Printable.swift"; path = "../UInt256/Classes/UInt256+Printable.swift"; sourceTree = "<group>"; };
-		A22FAE20199653E900B50398 /* UInt256+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Equatable.swift"; path = "../UInt256/Classes/UInt256+Equatable.swift"; sourceTree = "<group>"; };
-		A22FAE21199653E900B50398 /* UInt256+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Comparable.swift"; path = "../UInt256/Classes/UInt256+Comparable.swift"; sourceTree = "<group>"; };
-		A22FAE22199653E900B50398 /* UInt256+BitwiseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+BitwiseOperations.swift"; path = "../UInt256/Classes/UInt256+BitwiseOperations.swift"; sourceTree = "<group>"; };
-		A22FAE23199653E900B50398 /* UInt256+IntegerArithmetic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "UInt256+IntegerArithmetic.c"; path = "../UInt256/Classes/UInt256+IntegerArithmetic.c"; sourceTree = "<group>"; };
-		A22FAE24199653E900B50398 /* UInt256+IntegerArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+IntegerArithmetic.swift"; path = "../UInt256/Classes/UInt256+IntegerArithmetic.swift"; sourceTree = "<group>"; };
-		A22FAE25199653E900B50398 /* UInt256+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Sequence.swift"; path = "../UInt256/Classes/UInt256+Sequence.swift"; sourceTree = "<group>"; };
-		A22FAE26199653E900B50398 /* UInt256+IntegerLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+IntegerLiteralConvertible.swift"; path = "../UInt256/Classes/UInt256+IntegerLiteralConvertible.swift"; sourceTree = "<group>"; };
-		A22FAE27199653E900B50398 /* UInt256+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Hashable.swift"; path = "../UInt256/Classes/UInt256+Hashable.swift"; sourceTree = "<group>"; };
-		A22FAE28199653E900B50398 /* UInt256+RandomAccessIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+RandomAccessIndex.swift"; path = "../UInt256/Classes/UInt256+RandomAccessIndex.swift"; sourceTree = "<group>"; };
-		A22FAE29199653E900B50398 /* UInt256+ForwardIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+ForwardIndex.swift"; path = "../UInt256/Classes/UInt256+ForwardIndex.swift"; sourceTree = "<group>"; };
-		A22FAE2A199653E900B50398 /* UInt256+ArrayBound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+ArrayBound.swift"; path = "../UInt256/Classes/UInt256+ArrayBound.swift"; sourceTree = "<group>"; };
-		A22FAE2B199653E900B50398 /* UInt32+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+Additions.swift"; path = "../UInt256/Classes/UInt32+Additions.swift"; sourceTree = "<group>"; };
-		A22FAE2C199653E900B50398 /* BaseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseConverter.swift; path = ../UInt256/Classes/BaseConverter.swift; sourceTree = "<group>"; };
-		A23208CF1996418300BF5E38 /* ECurve doc.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ECurve doc.playground"; sourceTree = "<group>"; };
-		A23208D0199641FD00BF5E38 /* FFInt.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FFInt.playground; sourceTree = "<group>"; };
-		A258B3FB1962E77D00CD0B09 /* ECPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECPointTests.swift; path = Tests/ECPointTests.swift; sourceTree = SOURCE_ROOT; };
-		A258B3FC1962E77D00CD0B09 /* ECurveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECurveTests.swift; path = Tests/ECurveTests.swift; sourceTree = SOURCE_ROOT; };
-		A258B3FD1962E77D00CD0B09 /* FiniteFieldIntegerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiniteFieldIntegerTests.swift; path = Tests/FiniteFieldIntegerTests.swift; sourceTree = SOURCE_ROOT; };
-		A258B4011962E7A600CD0B09 /* ECDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECDomain.swift; path = Classes/ECDomain.swift; sourceTree = "<group>"; };
-		A258B4021962E7A600CD0B09 /* ECPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECPoint.swift; path = Classes/ECPoint.swift; sourceTree = "<group>"; };
-		A258B4031962E7A600CD0B09 /* ECurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECurve.swift; path = Classes/ECurve.swift; sourceTree = "<group>"; };
-		A258B4041962E7A600CD0B09 /* FiniteField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiniteField.swift; path = Classes/FiniteField.swift; sourceTree = "<group>"; };
-		A258B4051962E7A600CD0B09 /* FiniteFieldInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiniteFieldInteger.swift; path = Classes/FiniteFieldInteger.swift; sourceTree = "<group>"; };
-		A258B40C1962E7FF00CD0B09 /* UInt256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UInt256.framework; path = "../UInt256/build/Debug-iphoneos/UInt256.framework"; sourceTree = "<group>"; };
-		A26F77D5196850EF00C75822 /* ECurve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECurve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26F77D8196850EF00C75822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A26F77DF196850EF00C75822 /* ECurveMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECurveMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26F77E5196850EF00C75822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ECurveMacTests/Info.plist; sourceTree = "<group>"; };
-		A2D39B9F198D7C8600E2D317 /* UInt256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UInt256.framework; path = "UInt256/build/Debug-iphoneos/UInt256.framework"; sourceTree = "<group>"; };
-		A2D39BA4198D7D4B00E2D317 /* UInt256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UInt256.framework; path = UInt256/build/Debug/UInt256.framework; sourceTree = "<group>"; };
-		A2DCBEAA1968523000BD92DB /* UInt256Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UInt256Mac.framework; path = UInt256/build/Debug/UInt256Mac.framework; sourceTree = "<group>"; };
+		"ECurve::ECurve::Product" /* ECurve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ECurve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ECurve::ECurveTests::Product" /* ECurveTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ECurveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* ECPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECPoint.swift; sourceTree = "<group>"; };
+		OBJ_11 /* ECurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECurve.swift; sourceTree = "<group>"; };
+		OBJ_12 /* FiniteField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteField.swift; sourceTree = "<group>"; };
+		OBJ_13 /* FiniteFieldInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteFieldInteger.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Secp256k1BasePointDoublings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secp256k1BasePointDoublings.swift; sourceTree = "<group>"; };
+		OBJ_17 /* ECPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECPointTests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ECurveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECurveTests.swift; sourceTree = "<group>"; };
+		OBJ_19 /* FiniteFieldIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteFieldIntegerTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* UInt256+IntegerArithmetic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "UInt256+IntegerArithmetic.c"; sourceTree = "<group>"; };
+		OBJ_25 /* UInt256+IntegerArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UInt256+IntegerArithmetic.h"; sourceTree = "<group>"; };
+		OBJ_26 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/cm/work/ECurve/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap; sourceTree = "<group>"; };
+		OBJ_28 /* BaseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConverter.swift; sourceTree = "<group>"; };
+		OBJ_29 /* UInt256+BitwiseOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+BitwiseOperations.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* UInt256+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+Comparable.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* UInt256+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+Equatable.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* UInt256+ForwardIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+ForwardIndex.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* UInt256+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+Hashable.swift"; sourceTree = "<group>"; };
+		OBJ_34 /* UInt256+IntegerArithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+IntegerArithmetic.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* UInt256+IntegerLiteralConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+IntegerLiteralConvertible.swift"; sourceTree = "<group>"; };
+		OBJ_36 /* UInt256+Printable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+Printable.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* UInt256+RandomAccessIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+RandomAccessIndex.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* UInt256+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt256+Sequence.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* UInt256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt256.swift; sourceTree = "<group>"; };
+		OBJ_40 /* UInt32+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+Additions.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/cm/work/ECurve/.build/checkouts/UInt256.git--5686592992454955421/Package.swift"; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* ECDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECDomain.swift; sourceTree = "<group>"; };
+		"UInt256::CUInt256::Product" /* CUInt256.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CUInt256.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"UInt256::UInt256::Product" /* UInt256.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UInt256.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A22690731962E6E800291D7A /* Frameworks */ = {
+		OBJ_109 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A2D39BA0198D7C8600E2D317 /* UInt256.framework in Frameworks */,
+				OBJ_110 /* CUInt256.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A226907F1962E6E800291D7A /* Frameworks */ = {
+		OBJ_117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22690831962E6E800291D7A /* ECurve.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A22FADFB1996539500B50398 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A26F77D1196850EF00C75822 /* Frameworks */ = {
+		OBJ_67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A2D39BA5198D7D4B00E2D317 /* UInt256.framework in Frameworks */,
+				OBJ_68 /* ECurve.framework in Frameworks */,
+				OBJ_69 /* UInt256.framework in Frameworks */,
+				OBJ_70 /* CUInt256.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A26F77DC196850EF00C75822 /* Frameworks */ = {
+		OBJ_87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A26F77E0196850EF00C75822 /* ECurve.framework in Frameworks */,
+				OBJ_88 /* UInt256.framework in Frameworks */,
+				OBJ_89 /* CUInt256.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A211A5EA198BFE7100C2D2F0 /* Resources */ = {
+		OBJ_15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A211A5E7198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist */,
+				OBJ_16 /* ECurveTests */,
 			);
-			name = Resources;
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* ECurveTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* ECPointTests.swift */,
+				OBJ_18 /* ECurveTests.swift */,
+				OBJ_19 /* FiniteFieldIntegerTests.swift */,
+			);
+			name = ECurveTests;
+			path = Tests/ECurveTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* UInt256 1.0.0 */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		A226906D1962E6E800291D7A = {
+		OBJ_21 /* UInt256 1.0.0 */ = {
 			isa = PBXGroup;
 			children = (
-				A23208D0199641FD00BF5E38 /* FFInt.playground */,
-				A23208CF1996418300BF5E38 /* ECurve doc.playground */,
-				A211A5EA198BFE7100C2D2F0 /* Resources */,
-				A258B40B1962E7AA00CD0B09 /* ECurve */,
-				A22690861962E6E800291D7A /* ECurveTests */,
-				A22690791962E6E800291D7A /* Supporting Files */,
-				A26F77D6196850EF00C75822 /* ECurveMac */,
-				A22FAE001996539500B50398 /* ECurveFlat */,
-				A258B40E1962E80C00CD0B09 /* Frameworks */,
-				A22690781962E6E800291D7A /* Products */,
+				OBJ_22 /* CUInt256 */,
+				OBJ_27 /* UInt256 */,
+				OBJ_41 /* Package.swift */,
 			);
+			name = "UInt256 1.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_22 /* CUInt256 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* UInt256+IntegerArithmetic.c */,
+				OBJ_24 /* include */,
+			);
+			name = CUInt256;
+			path = ".build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* UInt256+IntegerArithmetic.h */,
+				OBJ_26 /* module.modulemap */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
-		A22690781962E6E800291D7A /* Products */ = {
+		OBJ_27 /* UInt256 */ = {
 			isa = PBXGroup;
 			children = (
-				A22690771962E6E800291D7A /* ECurve.framework */,
-				A22690821962E6E800291D7A /* ECurveTests.xctest */,
-				A26F77D5196850EF00C75822 /* ECurve.framework */,
-				A26F77DF196850EF00C75822 /* ECurveMacTests.xctest */,
-				A22FADFF1996539500B50398 /* ECurveFlat.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A22690791962E6E800291D7A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A226907B1962E6E800291D7A /* Info.plist */,
-				A226907C1962E6E800291D7A /* ECurve.h */,
-			);
-			name = "Supporting Files";
-			path = ECurve;
-			sourceTree = "<group>";
-		};
-		A22690861962E6E800291D7A /* ECurveTests */ = {
-			isa = PBXGroup;
-			children = (
-				A258B3FB1962E77D00CD0B09 /* ECPointTests.swift */,
-				A258B3FC1962E77D00CD0B09 /* ECurveTests.swift */,
-				A258B3FD1962E77D00CD0B09 /* FiniteFieldIntegerTests.swift */,
-				A22690881962E6E800291D7A /* Info.plist */,
-				A26F77E5196850EF00C75822 /* Info.plist */,
-			);
-			path = ECurveTests;
-			sourceTree = "<group>";
-		};
-		A22FAE001996539500B50398 /* ECurveFlat */ = {
-			isa = PBXGroup;
-			children = (
-				A22FAE1D199653CC00B50398 /* UInt256 */,
-				A22FAE031996539500B50398 /* ECurveFlat.h */,
-				A22FAE011996539500B50398 /* Supporting Files */,
-			);
-			path = ECurveFlat;
-			sourceTree = "<group>";
-		};
-		A22FAE011996539500B50398 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A22FAE021996539500B50398 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A22FAE1D199653CC00B50398 /* UInt256 */ = {
-			isa = PBXGroup;
-			children = (
-				A22FAE1E199653E900B50398 /* UInt256.swift */,
-				A22FAE1F199653E900B50398 /* UInt256+Printable.swift */,
-				A22FAE20199653E900B50398 /* UInt256+Equatable.swift */,
-				A22FAE21199653E900B50398 /* UInt256+Comparable.swift */,
-				A22FAE22199653E900B50398 /* UInt256+BitwiseOperations.swift */,
-				A22FAE23199653E900B50398 /* UInt256+IntegerArithmetic.c */,
-				A22FAE24199653E900B50398 /* UInt256+IntegerArithmetic.swift */,
-				A22FAE25199653E900B50398 /* UInt256+Sequence.swift */,
-				A22FAE26199653E900B50398 /* UInt256+IntegerLiteralConvertible.swift */,
-				A22FAE27199653E900B50398 /* UInt256+Hashable.swift */,
-				A22FAE28199653E900B50398 /* UInt256+RandomAccessIndex.swift */,
-				A22FAE29199653E900B50398 /* UInt256+ForwardIndex.swift */,
-				A22FAE2A199653E900B50398 /* UInt256+ArrayBound.swift */,
-				A22FAE2B199653E900B50398 /* UInt32+Additions.swift */,
-				A22FAE2C199653E900B50398 /* BaseConverter.swift */,
+				OBJ_28 /* BaseConverter.swift */,
+				OBJ_29 /* UInt256+BitwiseOperations.swift */,
+				OBJ_30 /* UInt256+Comparable.swift */,
+				OBJ_31 /* UInt256+Equatable.swift */,
+				OBJ_32 /* UInt256+ForwardIndex.swift */,
+				OBJ_33 /* UInt256+Hashable.swift */,
+				OBJ_34 /* UInt256+IntegerArithmetic.swift */,
+				OBJ_35 /* UInt256+IntegerLiteralConvertible.swift */,
+				OBJ_36 /* UInt256+Printable.swift */,
+				OBJ_37 /* UInt256+RandomAccessIndex.swift */,
+				OBJ_38 /* UInt256+Sequence.swift */,
+				OBJ_39 /* UInt256.swift */,
+				OBJ_40 /* UInt32+Additions.swift */,
 			);
 			name = UInt256;
-			sourceTree = "<group>";
+			path = ".build/checkouts/UInt256.git--5686592992454955421/Sources/UInt256";
+			sourceTree = SOURCE_ROOT;
 		};
-		A258B40B1962E7AA00CD0B09 /* ECurve */ = {
+		OBJ_42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A258B4011962E7A600CD0B09 /* ECDomain.swift */,
-				A258B4021962E7A600CD0B09 /* ECPoint.swift */,
-				A258B4031962E7A600CD0B09 /* ECurve.swift */,
-				A258B4041962E7A600CD0B09 /* FiniteField.swift */,
-				A258B4051962E7A600CD0B09 /* FiniteFieldInteger.swift */,
+				"ECurve::ECurveTests::Product" /* ECurveTests.xctest */,
+				"ECurve::ECurve::Product" /* ECurve.framework */,
+				"UInt256::UInt256::Product" /* UInt256.framework */,
+				"UInt256::CUInt256::Product" /* CUInt256.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_15 /* Tests */,
+				OBJ_20 /* Dependencies */,
+				OBJ_42 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* ECurve */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* ECurve */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ECDomain.swift */,
+				OBJ_10 /* ECPoint.swift */,
+				OBJ_11 /* ECurve.swift */,
+				OBJ_12 /* FiniteField.swift */,
+				OBJ_13 /* FiniteFieldInteger.swift */,
+				OBJ_14 /* Secp256k1BasePointDoublings.swift */,
 			);
 			name = ECurve;
-			sourceTree = "<group>";
-		};
-		A258B40E1962E80C00CD0B09 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2D39BA4198D7D4B00E2D317 /* UInt256.framework */,
-				A2D39B9F198D7C8600E2D317 /* UInt256.framework */,
-				A2DCBEAA1968523000BD92DB /* UInt256Mac.framework */,
-				A258B40C1962E7FF00CD0B09 /* UInt256.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A26F77D6196850EF00C75822 /* ECurveMac */ = {
-			isa = PBXGroup;
-			children = (
-				A26F77D7196850EF00C75822 /* Supporting Files */,
-			);
-			path = ECurveMac;
-			sourceTree = "<group>";
-		};
-		A26F77D7196850EF00C75822 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A26F77D8196850EF00C75822 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = Sources/ECurve;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		A22690741962E6E800291D7A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A226907D1962E6E800291D7A /* ECurve.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A22FADFC1996539500B50398 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22FAE041996539500B50398 /* ECurveFlat.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A26F77D2196850EF00C75822 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		A22690761962E6E800291D7A /* ECurve */ = {
+		"ECurve::ECurve" /* ECurve */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A226908D1962E6E800291D7A /* Build configuration list for PBXNativeTarget "ECurve" */;
+			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "ECurve" */;
 			buildPhases = (
-				A22690721962E6E800291D7A /* Sources */,
-				A22690731962E6E800291D7A /* Frameworks */,
-				A22690741962E6E800291D7A /* Headers */,
-				A22690751962E6E800291D7A /* Resources */,
+				OBJ_80 /* Sources */,
+				OBJ_87 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_90 /* PBXTargetDependency */,
+				OBJ_91 /* PBXTargetDependency */,
 			);
 			name = ECurve;
 			productName = ECurve;
-			productReference = A22690771962E6E800291D7A /* ECurve.framework */;
+			productReference = "ECurve::ECurve::Product" /* ECurve.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A22690811962E6E800291D7A /* ECurveTests */ = {
+		"ECurve::ECurveTests" /* ECurveTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A22690901962E6E800291D7A /* Build configuration list for PBXNativeTarget "ECurveTests" */;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXNativeTarget "ECurveTests" */;
 			buildPhases = (
-				A226907E1962E6E800291D7A /* Sources */,
-				A226907F1962E6E800291D7A /* Frameworks */,
-				A22690801962E6E800291D7A /* Resources */,
+				OBJ_63 /* Sources */,
+				OBJ_67 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A22690851962E6E800291D7A /* PBXTargetDependency */,
+				OBJ_71 /* PBXTargetDependency */,
+				OBJ_73 /* PBXTargetDependency */,
+				OBJ_75 /* PBXTargetDependency */,
 			);
 			name = ECurveTests;
 			productName = ECurveTests;
-			productReference = A22690821962E6E800291D7A /* ECurveTests.xctest */;
+			productReference = "ECurve::ECurveTests::Product" /* ECurveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A22FADFE1996539500B50398 /* ECurveFlat */ = {
+		"ECurve::SwiftPMPackageDescription" /* ECurvePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A22FAE151996539500B50398 /* Build configuration list for PBXNativeTarget "ECurveFlat" */;
+			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "ECurvePackageDescription" */;
 			buildPhases = (
-				A22FADFA1996539500B50398 /* Sources */,
-				A22FADFB1996539500B50398 /* Frameworks */,
-				A22FADFC1996539500B50398 /* Headers */,
-				A22FADFD1996539500B50398 /* Resources */,
+				OBJ_51 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ECurveFlat;
-			productName = ECurveFlat;
-			productReference = A22FADFF1996539500B50398 /* ECurveFlat.framework */;
+			name = ECurvePackageDescription;
+			productName = ECurvePackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		A26F77D4196850EF00C75822 /* ECurveMac */ = {
+		"UInt256::CUInt256" /* CUInt256 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A26F77EE196850EF00C75822 /* Build configuration list for PBXNativeTarget "ECurveMac" */;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "CUInt256" */;
 			buildPhases = (
-				A26F77D0196850EF00C75822 /* Sources */,
-				A26F77D1196850EF00C75822 /* Frameworks */,
-				A26F77D2196850EF00C75822 /* Headers */,
-				A26F77D3196850EF00C75822 /* Resources */,
+				OBJ_115 /* Sources */,
+				OBJ_117 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ECurveMac;
-			productName = ECurveMac;
-			productReference = A26F77D5196850EF00C75822 /* ECurve.framework */;
+			name = CUInt256;
+			productName = CUInt256;
+			productReference = "UInt256::CUInt256::Product" /* CUInt256.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A26F77DE196850EF00C75822 /* ECurveMacTests */ = {
+		"UInt256::SwiftPMPackageDescription" /* UInt256PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A26F77EF196850EF00C75822 /* Build configuration list for PBXNativeTarget "ECurveMacTests" */;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "UInt256PackageDescription" */;
 			buildPhases = (
-				A26F77DB196850EF00C75822 /* Sources */,
-				A26F77DC196850EF00C75822 /* Frameworks */,
-				A26F77DD196850EF00C75822 /* Resources */,
+				OBJ_57 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A26F77E2196850EF00C75822 /* PBXTargetDependency */,
 			);
-			name = ECurveMacTests;
-			productName = ECurveMacTests;
-			productReference = A26F77DF196850EF00C75822 /* ECurveMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = UInt256PackageDescription;
+			productName = UInt256PackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"UInt256::UInt256" /* UInt256 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_92 /* Build configuration list for PBXNativeTarget "UInt256" */;
+			buildPhases = (
+				OBJ_95 /* Sources */,
+				OBJ_109 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_111 /* PBXTargetDependency */,
+			);
+			name = UInt256;
+			productName = UInt256;
+			productReference = "UInt256::UInt256::Product" /* UInt256.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A226906E1962E6E800291D7A /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0710;
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "Crypto Coin Swift";
-				TargetAttributes = {
-					A22690761962E6E800291D7A = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					A22690811962E6E800291D7A = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = A22690761962E6E800291D7A;
-					};
-					A22FADFE1996539500B50398 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					A26F77D4196850EF00C75822 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					A26F77DE196850EF00C75822 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = A26F77D4196850EF00C75822;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = A22690711962E6E800291D7A /* Build configuration list for PBXProject "ECurve" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ECurve" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A226906D1962E6E800291D7A;
-			productRefGroup = A22690781962E6E800291D7A /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A22690761962E6E800291D7A /* ECurve */,
-				A22690811962E6E800291D7A /* ECurveTests */,
-				A26F77D4196850EF00C75822 /* ECurveMac */,
-				A26F77DE196850EF00C75822 /* ECurveMacTests */,
-				A22FADFE1996539500B50398 /* ECurveFlat */,
+				"ECurve::SwiftPMPackageDescription" /* ECurvePackageDescription */,
+				"UInt256::SwiftPMPackageDescription" /* UInt256PackageDescription */,
+				"ECurve::ECurveTests" /* ECurveTests */,
+				"ECurve::ECurve" /* ECurve */,
+				"UInt256::UInt256" /* UInt256 */,
+				"UInt256::CUInt256" /* CUInt256 */,
+				"ECurve::ECurvePackageTests::ProductTarget" /* ECurvePackageTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A22690751962E6E800291D7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A211A5E8198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A22690801962E6E800291D7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A211A5EB198C0A5900C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A22FADFD1996539500B50398 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22FAE17199653B400B50398 /* Secp256k1BasePointDoublings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A26F77D3196850EF00C75822 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A211A5E9198BFE3A00C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A26F77DD196850EF00C75822 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A211A5EC198C0A5900C2D2F0 /* Secp256k1BasePointDoublings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A22690721962E6E800291D7A /* Sources */ = {
+		OBJ_115 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A258B4071962E7A600CD0B09 /* ECPoint.swift in Sources */,
-				A258B4061962E7A600CD0B09 /* ECDomain.swift in Sources */,
-				A258B40A1962E7A600CD0B09 /* FiniteFieldInteger.swift in Sources */,
-				A258B4081962E7A600CD0B09 /* ECurve.swift in Sources */,
-				A258B4091962E7A600CD0B09 /* FiniteField.swift in Sources */,
+				OBJ_116 /* UInt256+IntegerArithmetic.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A226907E1962E6E800291D7A /* Sources */ = {
+		OBJ_51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A2D39BA1198D7CCC00E2D317 /* ECPointTests.swift in Sources */,
-				A2D39BA2198D7CCC00E2D317 /* ECurveTests.swift in Sources */,
-				A2D39BA3198D7CCC00E2D317 /* FiniteFieldIntegerTests.swift in Sources */,
+				OBJ_52 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A22FADFA1996539500B50398 /* Sources */ = {
+		OBJ_57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A22FAE35199653E900B50398 /* UInt256+IntegerLiteralConvertible.swift in Sources */,
-				A22FAE2E199653E900B50398 /* UInt256+Printable.swift in Sources */,
-				A22FAE19199653B400B50398 /* ECPoint.swift in Sources */,
-				A22FAE34199653E900B50398 /* UInt256+Sequence.swift in Sources */,
-				A22FAE18199653B400B50398 /* ECDomain.swift in Sources */,
-				A22FAE1C199653B400B50398 /* FiniteFieldInteger.swift in Sources */,
-				A22FAE39199653E900B50398 /* UInt256+ArrayBound.swift in Sources */,
-				A22FAE36199653E900B50398 /* UInt256+Hashable.swift in Sources */,
-				A22FAE2D199653E900B50398 /* UInt256.swift in Sources */,
-				A22FAE3B199653E900B50398 /* BaseConverter.swift in Sources */,
-				A22FAE31199653E900B50398 /* UInt256+BitwiseOperations.swift in Sources */,
-				A22FAE3A199653E900B50398 /* UInt32+Additions.swift in Sources */,
-				A22FAE32199653E900B50398 /* UInt256+IntegerArithmetic.c in Sources */,
-				A22FAE1A199653B400B50398 /* ECurve.swift in Sources */,
-				A22FAE2F199653E900B50398 /* UInt256+Equatable.swift in Sources */,
-				A22FAE1B199653B400B50398 /* FiniteField.swift in Sources */,
-				A22FAE38199653E900B50398 /* UInt256+ForwardIndex.swift in Sources */,
-				A22FAE37199653E900B50398 /* UInt256+RandomAccessIndex.swift in Sources */,
-				A22FAE33199653E900B50398 /* UInt256+IntegerArithmetic.swift in Sources */,
-				A22FAE30199653E900B50398 /* UInt256+Comparable.swift in Sources */,
+				OBJ_58 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A26F77D0196850EF00C75822 /* Sources */ = {
+		OBJ_63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A26F77F41968513800C75822 /* ECPoint.swift in Sources */,
-				A26F77F61968513800C75822 /* FiniteField.swift in Sources */,
-				A26F77F31968513800C75822 /* ECDomain.swift in Sources */,
-				A26F77F71968513800C75822 /* FiniteFieldInteger.swift in Sources */,
-				A26F77F51968513800C75822 /* ECurve.swift in Sources */,
+				OBJ_64 /* ECPointTests.swift in Sources */,
+				OBJ_65 /* ECurveTests.swift in Sources */,
+				OBJ_66 /* FiniteFieldIntegerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A26F77DB196850EF00C75822 /* Sources */ = {
+		OBJ_80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A2960AB2197E963A002EC55D /* ECPointTests.swift in Sources */,
-				A2960AB3197E963A002EC55D /* ECurveTests.swift in Sources */,
-				A2960AB4197E963A002EC55D /* FiniteFieldIntegerTests.swift in Sources */,
+				OBJ_81 /* ECDomain.swift in Sources */,
+				OBJ_82 /* ECPoint.swift in Sources */,
+				OBJ_83 /* ECurve.swift in Sources */,
+				OBJ_84 /* FiniteField.swift in Sources */,
+				OBJ_85 /* FiniteFieldInteger.swift in Sources */,
+				OBJ_86 /* Secp256k1BasePointDoublings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_96 /* BaseConverter.swift in Sources */,
+				OBJ_97 /* UInt256+BitwiseOperations.swift in Sources */,
+				OBJ_98 /* UInt256+Comparable.swift in Sources */,
+				OBJ_99 /* UInt256+Equatable.swift in Sources */,
+				OBJ_100 /* UInt256+ForwardIndex.swift in Sources */,
+				OBJ_101 /* UInt256+Hashable.swift in Sources */,
+				OBJ_102 /* UInt256+IntegerArithmetic.swift in Sources */,
+				OBJ_103 /* UInt256+IntegerLiteralConvertible.swift in Sources */,
+				OBJ_104 /* UInt256+Printable.swift in Sources */,
+				OBJ_105 /* UInt256+RandomAccessIndex.swift in Sources */,
+				OBJ_106 /* UInt256+Sequence.swift in Sources */,
+				OBJ_107 /* UInt256.swift in Sources */,
+				OBJ_108 /* UInt32+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A22690851962E6E800291D7A /* PBXTargetDependency */ = {
+		OBJ_111 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A22690761962E6E800291D7A /* ECurve */;
-			targetProxy = A22690841962E6E800291D7A /* PBXContainerItemProxy */;
+			target = "UInt256::CUInt256" /* CUInt256 */;
+			targetProxy = 832BE5751F45BFF6001591C8 /* PBXContainerItemProxy */;
 		};
-		A26F77E2196850EF00C75822 /* PBXTargetDependency */ = {
+		OBJ_122 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A26F77D4196850EF00C75822 /* ECurveMac */;
-			targetProxy = A26F77E1196850EF00C75822 /* PBXContainerItemProxy */;
+			target = "ECurve::ECurveTests" /* ECurveTests */;
+			targetProxy = 832BE57A1F45BFF7001591C8 /* PBXContainerItemProxy */;
+		};
+		OBJ_71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ECurve::ECurve" /* ECurve */;
+			targetProxy = 832BE5771F45BFF6001591C8 /* PBXContainerItemProxy */;
+		};
+		OBJ_73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UInt256::UInt256" /* UInt256 */;
+			targetProxy = 832BE5781F45BFF6001591C8 /* PBXContainerItemProxy */;
+		};
+		OBJ_75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UInt256::CUInt256" /* CUInt256 */;
+			targetProxy = 832BE5791F45BFF6001591C8 /* PBXContainerItemProxy */;
+		};
+		OBJ_90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UInt256::UInt256" /* UInt256 */;
+			targetProxy = 832BE5741F45BFF6001591C8 /* PBXContainerItemProxy */;
+		};
+		OBJ_91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UInt256::CUInt256" /* CUInt256 */;
+			targetProxy = 832BE5761F45BFF6001591C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A226908B1962E6E800291D7A /* Debug */ = {
+		OBJ_113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				DEFINES_MODULE = NO;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/CUInt256_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CUInt256;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CUInt256;
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/CUInt256_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CUInt256;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CUInt256;
+			};
+			name = Release;
+		};
+		OBJ_120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				METAL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		A226908C1962E6E800291D7A /* Release */ = {
+		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		A226908E1962E6E800291D7A /* Debug */ = {
+		OBJ_49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ECurve/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		A226908F1962E6E800291D7A /* Release */ = {
+		OBJ_50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = fast;
-				INFOPLIST_FILE = ECurve/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		A22690911962E6E800291D7A /* Debug */ = {
+		OBJ_55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		A22690921962E6E800291D7A /* Release */ = {
+		OBJ_56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		A22FAE0F1996539500B50398 /* Debug */ = {
+		OBJ_61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = ECurveFlat/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/ECurveTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ECurveTests;
 			};
 			name = Debug;
 		};
-		A22FAE101996539500B50398 /* Release */ = {
+		OBJ_62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ECurveFlat/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/ECurveTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ECurveTests;
 			};
 			name = Release;
 		};
-		A22FAE111996539500B50398 /* Fast */ = {
+		OBJ_78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ECurveFlat/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Fast;
-		};
-		A26F778E1968479D00C75822 /* Fast */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Fast;
-		};
-		A26F778F1968479D00C75822 /* Fast */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ECurve/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_DISABLE_SAFETY_CHECKS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Fast;
-		};
-		A26F77901968479D00C75822 /* Fast */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Fast;
-		};
-		A26F77E8196850EF00C75822 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
 				);
-				INFOPLIST_FILE = ECurveMac/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = ECurve;
-				SDKROOT = macosx;
+				INFOPLIST_FILE = ECurve.xcodeproj/ECurve_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ECurve;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_DISABLE_SAFETY_CHECKS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ECurve;
 			};
 			name = Debug;
 		};
-		A26F77E9196850EF00C75822 /* Release */ = {
+		OBJ_79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ECurveMac/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = ECurve;
-				SDKROOT = macosx;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/ECurve_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ECurve;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ECurve;
 			};
 			name = Release;
 		};
-		A26F77EA196850EF00C75822 /* Fast */ = {
+		OBJ_93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_OPTIMIZATION_LEVEL = fast;
-				INFOPLIST_FILE = ECurveMac/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = ECurve;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_DISABLE_SAFETY_CHECKS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Fast;
-		};
-		A26F77EB196850EF00C75822 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
 				);
-				INFOPLIST_FILE = ECurveMacTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				INFOPLIST_FILE = ECurve.xcodeproj/UInt256_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = UInt256;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = UInt256;
 			};
 			name = Debug;
 		};
-		A26F77EC196850EF00C75822 /* Release */ = {
+		OBJ_94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = ECurveMacTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/UInt256.git--5686592992454955421/Sources/CUInt256/include",
+					"$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256",
+				);
+				INFOPLIST_FILE = ECurve.xcodeproj/UInt256_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/ECurve.xcodeproj/GeneratedModuleMap/CUInt256/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = UInt256;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = UInt256;
 			};
 			name = Release;
-		};
-		A26F77ED196850EF00C75822 /* Fast */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ECurveMacTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptocoinswift.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Fast;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A22690711962E6E800291D7A /* Build configuration list for PBXProject "ECurve" */ = {
+		OBJ_112 /* Build configuration list for PBXNativeTarget "CUInt256" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A226908B1962E6E800291D7A /* Debug */,
-				A226908C1962E6E800291D7A /* Release */,
-				A26F778E1968479D00C75822 /* Fast */,
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A226908D1962E6E800291D7A /* Build configuration list for PBXNativeTarget "ECurve" */ = {
+		OBJ_119 /* Build configuration list for PBXAggregateTarget "ECurvePackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A226908E1962E6E800291D7A /* Debug */,
-				A226908F1962E6E800291D7A /* Release */,
-				A26F778F1968479D00C75822 /* Fast */,
+				OBJ_120 /* Debug */,
+				OBJ_121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A22690901962E6E800291D7A /* Build configuration list for PBXNativeTarget "ECurveTests" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "ECurve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A22690911962E6E800291D7A /* Debug */,
-				A22690921962E6E800291D7A /* Release */,
-				A26F77901968479D00C75822 /* Fast */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A22FAE151996539500B50398 /* Build configuration list for PBXNativeTarget "ECurveFlat" */ = {
+		OBJ_48 /* Build configuration list for PBXNativeTarget "ECurvePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A22FAE0F1996539500B50398 /* Debug */,
-				A22FAE101996539500B50398 /* Release */,
-				A22FAE111996539500B50398 /* Fast */,
+				OBJ_49 /* Debug */,
+				OBJ_50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A26F77EE196850EF00C75822 /* Build configuration list for PBXNativeTarget "ECurveMac" */ = {
+		OBJ_54 /* Build configuration list for PBXNativeTarget "UInt256PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A26F77E8196850EF00C75822 /* Debug */,
-				A26F77E9196850EF00C75822 /* Release */,
-				A26F77EA196850EF00C75822 /* Fast */,
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		A26F77EF196850EF00C75822 /* Build configuration list for PBXNativeTarget "ECurveMacTests" */ = {
+		OBJ_60 /* Build configuration list for PBXNativeTarget "ECurveTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A26F77EB196850EF00C75822 /* Debug */,
-				A26F77EC196850EF00C75822 /* Release */,
-				A26F77ED196850EF00C75822 /* Fast */,
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_77 /* Build configuration list for PBXNativeTarget "ECurve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_78 /* Debug */,
+				OBJ_79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_92 /* Build configuration list for PBXNativeTarget "UInt256" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_93 /* Debug */,
+				OBJ_94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A226906E1962E6E800291D7A /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }
